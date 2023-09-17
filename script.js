@@ -9,6 +9,10 @@ calculate.addEventListener('click', () => {
     //console.log(`The sum of total: ${total}`);
 });
 
+worker.onmessage = function(total) {
+    console.log(`Total sum of those numbers: ${total}`);
+}
+
 changeBG.addEventListener('click', () => {
     if(document.body.style.background !== 'green') {
         document.body.style.background = 'green';
