@@ -9,8 +9,8 @@ calculate.addEventListener('click', () => {
     //console.log(`The sum of total: ${total}`);
 });
 
-worker.onmessage = function(total) {
-    console.log(`Total sum of those numbers: ${total}`);
+worker.onmessage = function(message) {
+    console.log(`Total sum of those numbers: ${message.data}`);
 }
 
 changeBG.addEventListener('click', () => {
