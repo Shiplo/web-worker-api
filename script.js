@@ -4,8 +4,8 @@ const calculate = document.getElementById('calculate');
 const changeBG = document.getElementById('change-bg');
 const body = document.getElementsByTagName('body');
 
-calculate.addEventListener('click', () => {
-    //worker.postMessage("Please start the work...")
+calculate.addEventListener('click', () => { 
+    worker.postMessage("Please start the work...")
     //console.log(`The sum of total: ${total}`);
 });
 
